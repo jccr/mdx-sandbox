@@ -1,1 +1,1 @@
-# mdx-sandbox
+# MDX + Next.js + Chakra UI

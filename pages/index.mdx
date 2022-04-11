@@ -1,0 +1,52 @@
+import Other from "./other.mdx";
+
+# MDX + Next + Chakra UI
+
+Look, buttons! 👇
+
+<button>I'm regular!</button>
+<br />
+<Button
+  size="md"
+  height="48px"
+  width="200px"
+  border="2px"
+  borderColor="green.500"
+>
+  I'm styled!
+</Button>
+
+<Other />
+
+<Button>
+  <Other />
+</Button>
+
+Inline code `<test>`
+
+> Test
+
+<HStack spacing={4}>
+  {["sm", "md", "lg"].map((size) => (
+    <Tag size={size} key={size} variant="solid" colorScheme="teal">
+      Teal
+    </Tag>
+  ))}
+</HStack>
+
+<Center my="2">
+  <img src="http://placekitten.com/200/300" />
+  <img src="http://placekitten.com/200/300" />
+</Center>
+
+<Box my="3" bg="purple.100" p={4} borderWidth="1px" borderRadius="lg">
+  <Stat>
+    <StatLabel>Collected Fees</StatLabel>
+    <StatNumber>£0.00</StatNumber>
+    <StatHelpText>Feb 12 - Feb 28</StatHelpText>
+  </Stat>
+</Box>
+
+<Container maxW="md">
+  <Other />
+</Container>
